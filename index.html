@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <label for="text-input" class="text-input">
+            <input type="text" id="inputField" class="text-input" pattern=".{6,}" required readonly>
+            <svg width="280px" height="18px" viewBox="0 0 280 18" class="border">
+                <path
+                    d="M0,12 L223.166144,12 C217.241379,12 217.899687,12 225.141066,12 C236.003135,12 241.9279,12 249.827586,12 C257.727273,12 264.639498,12 274.514107,12 C281.097179,12 281.755486,12 276.489028,12">
+                </path>
+            </svg>
+            <svg width="14px" height="12px" viewBox="0 0 14 12" class="check">
+                <path d="M1 7 5.5 11 L13 1"></path>
+            </svg>
+        </label>
+        <br>
+        <label for="number-input" class="number-input">
+            <input type="number" id="length" class="number-input" min="4" max="20" value="8">
+        </label>
+        <br>
+        <button class="button-28" role="button" onclick="generatePassword()">Refresh</button>
+        <button class="button-33" role="button" onclick="copyToClipboard()">Copy</button>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
